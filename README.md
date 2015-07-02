@@ -98,16 +98,11 @@ User
 *Wrong:*
 
 ```js
-User
-.findOne({ name: 'foo' })
-.populate('bar')
-.exec(function(err, user) {
+User.findOne({ name: 'foo' }).populate('bar').exec(function(err, user) {
   return true;
 });
 
-User.findOne({ name: 'foo' })
-  .populate('bar')
-  .exec(function(err, user) {
+User.findOne({ name: 'foo' }).populate('bar').exec(function(err, user) {
     return true;
   });
 ```
