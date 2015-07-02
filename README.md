@@ -18,7 +18,6 @@
 * [Use the === operator](#use-the--operator)
 * [Use multi-line ternary operator](#use-multi-line-ternary-operator)
 * [Use slashes for comments](#use-slashes-for-comments)
-* [Getters and setters](#getters-and-setters)
 
 ## 4 Spaces for indention
 
@@ -157,15 +156,15 @@ abbreviations should generally be avoided.
 
 *Right:*
 
-<pre><code>
+```js
 var adminUser = db.query("SELECT * FROM users ...");
-</pre></code>
+```
 
 *Wrong:*
 
-<pre><code>
+```js
 var admin_user = db.query("SELECT * FROM users ...");
-</pre></code>
+```
 
 ## Use UpperCamelCase for class names
 
@@ -173,17 +172,17 @@ Class names should be capitalized using `UpperCamelCase`.
 
 *Right:*
 
-<pre><code>
+```js
 function BankAccount() {
 }
-</pre></code>
+```
 
 *Wrong:*
 
-<pre><code>
+```js
 function bank_Account() {
 }
-</pre></code>
+```
 
 ## Use UPPERCASE for Constants
 
@@ -196,23 +195,23 @@ ECMA standard.
 
 *Right:*
 
-<pre><code>
+```js
 var SECOND = 1 * 1000;
 
 function File() {
 }
 File.FULL_PERMISSIONS = 0777;
-</pre></code>
+```
 
 *Wrong:*
 
-<pre><code>
+```js
 const SECOND = 1 * 1000;
 
 function File() {
 }
 File.fullPermissions = 0777;
-</pre></code>
+```
 
 [const]: https://developer.mozilla.org/en/JavaScript/Reference/Statements/const
 
@@ -223,24 +222,24 @@ keys when your interpreter complains:
 
 *Right:*
 
-<pre><code>
+```js
 var a = ["hello", "world"];
 var b = {
   good: "code",
   "is generally": "pretty",
 };
-</pre></code>
+```
 
 *Wrong:*
 
-<pre><code>
+```js
 var a = [
   'hello', 'world'
 ];
 var b = {"good": 'code'
         , is generally: 'pretty'
         };
-</pre></code>
+```
 
 ## Use the === operator
 
