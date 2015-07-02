@@ -53,7 +53,7 @@ var foo = "bar";
 
 ```js
 var foo = 'bar';
-var foo = attr='" + something + "'
+var foo = "attr='" + something + "'";
 ```
 
 ## Opening braces go on the same line
